@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PancaCare Modern | Jhosua XII.6</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI,Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#07111f;color:#edf3fb;overflow-x:hidden}
+body:before{content:"";position:fixed;width:550px;height:550px;background:#b32d3a;border-radius:50%;filter:blur(150px);opacity:.22;right:-220px;top:-180px;z-index:-1}
+nav{position:sticky;top:0;z-index:10;padding:16px 7%;display:flex;justify-content:space-between;background:rgba(7,17,31,.86);backdrop-filter:blur(14px);border-bottom:1px solid #223149}
+.logo{font-size:22px;font-weight:800}.logo span{color:#ff6964}.status{color:#79e7a6;font-size:12px}
+.hero{max-width:1400px;margin:auto;min-height:72vh;padding:70px 7%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.badge{display:inline-block;padding:8px 14px;border:1px solid #34445b;border-radius:30px;color:#ffaaa7;font-size:12px;margin-bottom:18px}
+h1{font-size:clamp(45px,6vw,76px);line-height:1.05}.gradient{background:linear-gradient(90deg,#ff625e,#ffb15d);-webkit-background-clip:text;color:transparent}
+.hero p{color:#aebdd0;line-height:1.8;font-size:17px;margin:20px 0}.btn{display:inline-block;padding:14px 22px;border-radius:12px;background:linear-gradient(135deg,#e53935,#ff7d55);color:white;text-decoration:none;font-weight:700}
+.hero-card{padding:18px;border-radius:28px;background:#0e1c2e;border:1px solid #2c3d55;box-shadow:0 30px 70px #0007;animation:float 4s ease-in-out infinite}
+.hero-card img{width:100%;border-radius:18px;display:block}
+@keyframes float{50%{transform:translateY(-12px)}}
+.container{max-width:1400px;margin:auto;padding:20px 7% 80px}.title{text-align:center;margin:30px 0}.title h2{font-size:34px}.title p{color:#91a2b8;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#0c1929;border:1px solid #25364d;border-radius:22px;overflow:hidden;box-shadow:0 18px 45px #0005;transition:.35s}
+.card:hover{transform:translateY(-10px);border-color:#ff7065}.card img{width:100%;height:245px;object-fit:cover;display:block;transition:.5s}.card:hover img{transform:scale(1.04)}
+.content{padding:22px}.data{color:#ff8d87;font-weight:800;letter-spacing:2px;font-size:12px}.card h3{font-size:22px;margin:9px 0}.card p{color:#9fb0c5;line-height:1.65;font-size:14px}.pill{display:inline-block;margin-top:14px;padding:7px 10px;border-radius:20px;background:#3b1c25;color:#ffaaa7;font-size:12px}.link{display:block;margin-top:16px;color:#fff;text-decoration:none}
+.detail{margin-top:32px;padding:28px;background:#0c1929;border:1px solid #25364d;border-radius:24px;scroll-margin-top:70px}.detail-grid{display:grid;grid-template-columns:430px 1fr;gap:30px}.detail img{width:100%;border-radius:18px}.detail h2{font-size:29px}.detail p,.detail li{color:#b2c0d2;line-height:1.75}.sila{margin-top:15px;padding:16px;border-left:4px solid #ff625e;background:#271923;border-radius:12px}.sila b{color:#ffaaa7}.detail h4{margin:18px 0 8px}.detail ul{padding-left:20px}.boxes{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:20px}.box{padding:17px;border-radius:14px}.warn{background:#2d2818;border:1px solid #5b4b1d}.good{background:#102b25;border:1px solid #1f5a4b}
+.identity{text-align:center;margin-top:32px;padding:30px;border-radius:22px;background:#101e31;border:1px solid #2c3d55}.identity p{color:#b5c2d4;margin-top:8px}
+footer{text-align:center;color:#8494aa;padding:35px}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.hero,.detail-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{min-height:auto}.hero-card{max-width:600px;margin:auto}.boxes{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="logo">◈ <span>PancaCare</span></div><div class="status">● SYSTEM ONLINE</div></nav>
+<section class="hero">
+<div><div class="badge">🇮🇩 ANALISIS NILAI PANCASILA</div><h1>Perbuatan Baik,<br><span class="gradient">Nilai yang Bermakna.</span></h1><p>Dashboard modern untuk menganalisis tiga perbuatan baik dan kaitannya dengan nilai-nilai Pancasila.</p><a class="btn" href="#analisis">Mulai Eksplorasi ↓</a></div>
+<div class="hero-card"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%230c1929' width='400' height='300'/%3E%3Ccircle cx='200' cy='150' r='80' fill='%23ff6964'/%3E%3C/svg%3E" alt="Ilustrasi perbuatan baik"></div>
+</section>
+
+<main class="container">
+<div class="title" id="analisis"><h2>Analisis Perbuatan Baik</h2><p>Tiga tindakan sederhana dengan makna besar.</p></div>
+<section class="cards">
+<article class="card reveal"><div class="content"><div class="data">DATA 01</div><h3>Merawat Adik Kamar yang Sakit</h3><p>Bentuk kepedulian terhadap sesama yang sedang membutuhkan bantuan.</p><span class="pill">Sila Utama: Ke-2</span><a class="link" href="#k1">Lihat analisis lengkap →</a></div></article>
+<article class="card reveal"><div class="content"><div class="data">DATA 02</div><h3>Membagi Kue kepada Adik Kamar</h3><p>Tindakan sederhana yang menunjukkan kepedulian dan sikap mau berbagi.</p><span class="pill">Sila Utama: Ke-5</span><a class="link" href="#k2">Lihat analisis lengkap →</a></div></article>
+<article class="card reveal"><div class="content"><div class="data">DATA 03</div><h3>Meminjamkan Teman Sepatu untuk Olahraga</h3><p>Membantu teman agar tetap dapat mengikuti kegiatan olahraga.</p><span class="pill">Sila Utama: Ke-2</span><a class="link" href="#k3">Lihat analisis lengkap →</a></div></article>
+</section>
+
+<section class="detail reveal" id="k1"><div class="detail-grid"><div><div class="data">ANALISIS 01</div><h2>Merawat Adik Kamar yang Sedang Sakit</h2><div class="sila"><b>Sila ke-2 — Kemanusiaan yang Adil dan Beradab</b><p>Merawat adik kamar yang sedang sakit merupakan bentuk kepedulian terhadap sesama. Kita membantu orang yang sedang membutuhkan dan tidak membiarkannya sendirian.</p></div><h4>🔗 Kaitan dengan sila lain</h4><ul><li><b>Sila ke-1:</b> Mengajarkan untuk mengasihi dan berbuat baik kepada sesama.</li><li><b>Sila ke-3:</b> Mempererat persaudaraan dan kebersamaan.</li><li><b>Sila ke-4:</b> Dapat dilakukan melalui kerja sama dengan teman lain.</li><li><b>Sila ke-5:</b> Orang yang membutuhkan bantuan mendapat perhatian yang layak.</li></ul></div></div><div class="boxes"><div class="box warn"><b>⚠ Tantangan</b><p>Sulit dilakukan ketika sedang sibuk atau merasa lelah.</p></div><div class="box good"><b>🚀 Peluang</b><p>Menciptakan lingkungan yang lebih peduli dan saling menjaga.</p></div></div></section>
+
+<section class="detail reveal" id="k2"><div class="detail-grid"><div><div class="data">ANALISIS 02</div><h2>Membagi Kue kepada Adik Kamar</h2><div class="sila"><b>Sila ke-5 — Keadilan Sosial bagi Seluruh Rakyat Indonesia</b><p>Membagi kue menunjukkan sikap mau berbagi dan tidak hanya mementingkan diri sendiri.</p></div><h4>🔗 Kaitan dengan sila lain</h4><ul><li><b>Sila ke-1:</b> Berbagi merupakan bentuk perbuatan baik kepada sesama.</li><li><b>Sila ke-2:</b> Menunjukkan rasa peduli dan menghargai orang lain.</li><li><b>Sila ke-3:</b> Mempererat hubungan dan menciptakan kebersamaan.</li><li><b>Sila ke-4:</b> Belajar memperhatikan kepentingan orang lain.</li></ul></div></div><div class="boxes"><div class="box warn"><b>⚠ Tantangan</b><p>Terkadang muncul rasa ingin menyimpan makanan untuk diri sendiri.</p></div><div class="box good"><b>🚀 Peluang</b><p>Membuat hubungan dengan teman dan adik kamar lebih harmonis.</p></div></div></section>
+
+<section class="detail reveal" id="k3"><div class="detail-grid"><div><div class="data">ANALISIS 03</div><h2>Meminjamkan Teman Sepatu untuk Olahraga</h2><div class="sila"><b>Sila ke-2 — Kemanusiaan yang Adil dan Beradab</b><p>Meminjamkan sepatu merupakan bentuk kepedulian dan sikap saling membantu agar teman tetap dapat mengikuti kegiatan olahraga.</p></div><h4>🔗 Kaitan dengan sila lain</h4><ul><li><b>Sila ke-1:</b> Membantu teman merupakan bentuk berbuat baik kepada sesama.</li><li><b>Sila ke-3:</b> Mempererat persahabatan dan kebersamaan.</li><li><b>Sila ke-4:</b> Mempertimbangkan kebutuhan teman dalam mengambil keputusan.</li><li><b>Sila ke-5:</b> Memberi kesempatan teman untuk mengikuti kegiatan olahraga.</li></ul></div></div><div class="boxes"><div class="box warn"><b>⚠ Tantangan</b><p>Ada kekhawatiran sepatu menjadi kotor atau rusak.</p></div><div class="box good"><b>🚀 Peluang</b><p>Menciptakan lingkungan pertemanan yang kompak dan saling mendukung.</p></div></div></section>
+
+<section class="identity"><h2>👤 Identitas Siswa</h2><p><b>JHOSUA AZARIA LA'BIRAN</b></p><p>Kelas XII.6</p><p>Dashboard Analisis Perbuatan Baik dan Nilai Pancasila</p></section>
+</main>
+<footer>© 2026 • JHOSUA AZARIA LA'BIRAN • XII.6</footer>
+<script>
+const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(x=>o.observe(x));
+</script>
+</body></html>
